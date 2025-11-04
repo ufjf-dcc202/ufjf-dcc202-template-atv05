@@ -29,7 +29,7 @@ test.describe("listas.html", () => {
 
   test("deve ter um título no head com o número da atividade, a palavra Listas e o nome do aluno", async ({ page }) => {
     await page.goto(`file://${process.cwd()}/listas.html`);
-    await expect(page).toHaveTitle(/DCC202 - Atividade 4 - Listas: (.*)/);
+    await expect(page).toHaveTitle(/DCC202 - Atividade 05 - Listas: (.*)/);
   });
 
   
@@ -40,7 +40,7 @@ test.describe("listas.html", () => {
   
   test("deve ter um título no main com o mesmo conteúdo do título do documento", async ({ page }) => {
     await page.goto(`file://${process.cwd()}/listas.html`);
-    await expect(page.locator("main > h1")).toHaveText(/DCC202 - Atividade 4 - Listas: (.*)/);
+    await expect(page.locator("main > h1")).toHaveText(/DCC202 - Atividade 05 - Listas: (.*)/);
   });
 
   test('o main deve ter um parágrafo logo após o título', async ({ page }) => {

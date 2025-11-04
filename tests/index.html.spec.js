@@ -22,14 +22,14 @@ test.describe("index.html", () => {
     );
   });
 
-  test("deve ter o lang em pt no html", async ({ page }) => {
+  test("deve ter o lang em pt-BR no html", async ({ page }) => {
     await page.goto(`file://${process.cwd()}/index.html`);
     await expect(page.locator("html")).toHaveAttribute("lang", "pt-BR");
   });
 
   test("deve ter um título no head com o número da atividade e nome do aluno", async ({ page }) => {
     await page.goto(`file://${process.cwd()}/index.html`);
-    await expect(page).toHaveTitle(/DCC202 - Atividade 4: (.*)/);
+    await expect(page).toHaveTitle(/DCC202 - Atividade 05: (.*)/);
   });
 
   
@@ -40,7 +40,7 @@ test.describe("index.html", () => {
   
   test("deve ter um título no main com o nome do aluno", async ({ page }) => {
     await page.goto(`file://${process.cwd()}/index.html`);
-    await expect(page.locator("main > h1")).toHaveText(/DCC202 - Atividade 4: (.*)/);
+    await expect(page.locator("main > h1")).toHaveText(/DCC202 - Atividade 05: (.*)/);
   });
 
   test('o main deve ter um parágrafo logo após o título', async ({ page }) => {

@@ -1,7 +1,7 @@
 {
   "name": "ufjf-dcc202-2023-3-atv4-template",
   "version": "1.0.0",
-  "description": "Atividade 4 DCC202",
+  "description": "Atividade 05 DCC202",
   "main": "index.html",
   "scripts": {
     "test": "npx playwright test"
