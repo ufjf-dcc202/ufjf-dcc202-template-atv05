@@ -24,7 +24,7 @@ test.describe("index.html", () => {
 
   test("deve ter o lang em pt no html", async ({ page }) => {
     await page.goto(`file://${process.cwd()}/index.html`);
-    await expect(page.locator("html")).toHaveAttribute("lang", "pt");
+    await expect(page.locator("html")).toHaveAttribute("lang", "pt-BR");
   });
 
   test("deve ter um título no head com o número da atividade e nome do aluno", async ({ page }) => {
